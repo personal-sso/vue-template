@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <x-header :right-options="{showMore: true}" @on-click-more="showMenus = true">首页</x-header>
+    <x-header :right-options="{showMore: true}" @on-click-more="showMenus=true">首页</x-header>
     <tab :line-width="1" custom-bar-width="60px">
       <tab-item selected>已发货</tab-item>
       <tab-item>未发货</tab-item>
@@ -41,7 +41,5 @@
 </script>
 
 <style scoped lang="less">
-  .home {
-    background-color: #f8f8f8;
-  }
+  @import "home";
 </style>

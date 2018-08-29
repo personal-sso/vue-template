@@ -7,7 +7,7 @@ import App from './App.vue'
 import router from './router'
 import VueX from 'vuex'
 import vueG from 'vueg'
-import '../../vue-test/static/css/transition-min.css'
+import '../static/css/transition-min.css'
 
 Vue.use(VueX);
 Vue.use(vueG, router, {
