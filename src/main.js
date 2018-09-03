@@ -17,11 +17,6 @@ Vue.use(vueG, router, {
 });
 const store = new VueX.Store({
   state: {
-    // page3: {
-    //   forwardAnim: 'fadeInRight',
-    //   duration: '0.3',
-    //   backAnim: 'fadeInLeft'
-    // }
   },
   mutations: {
     setState(state, val) {

@@ -2,14 +2,14 @@
   <div class="good">
     <x-header :right-options="{showMore: true}" @on-click-more="showMenus=true">good</x-header>
 
-    <div style="position: relative;">
+    <div>
       <a @click="$router.back()">返回list</a>
     </div>
   </div>
 </template>
 
 <script>
-  import { XHeader, Tab, TabItem } from 'vux'
+  import { XHeader } from 'vux'
   export default {
     name: 'good',
     components: {
@@ -17,11 +17,7 @@
     },
     data() {
       return {
-        menus: {
-          menu1: 'Take Photo',
-          menu2: 'Choose from photos'
-        },
-        showMenus: false
+        showMenus: false,
       }
     },
   }

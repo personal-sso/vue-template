@@ -7,7 +7,7 @@
       <tab-item>全部订单</tab-item>
     </tab>
 
-    <div style="position: relative;">
+    <div>
       <a @click="$router.push('list')">默认转场效果</a>
     </div>
   </div>
