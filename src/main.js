@@ -12,15 +12,16 @@ import '../static/css/transition-min.css'
 Vue.use(VueX);
 Vue.use(vueG, router, {
   forwardAnim: 'fadeInRight',
-  shadow: true,
+  backAnim: 'fadeInRight',
+  shadow: false,
 });
 const store = new VueX.Store({
   state: {
-    page3: {
-      forwardAnim: 'fadeInRight',
-      duration: '0.3',
-      backAnim: 'fadeInLeft'
-    }
+    // page3: {
+    //   forwardAnim: 'fadeInRight',
+    //   duration: '0.3',
+    //   backAnim: 'fadeInLeft'
+    // }
   },
   mutations: {
     setState(state, val) {
