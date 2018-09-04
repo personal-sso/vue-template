@@ -5,25 +5,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueX from 'vuex'
+import store from './store/index';
 import vueG from 'vueg'
 import '../static/css/transition-min.css'
 
-Vue.use(VueX);
 Vue.use(vueG, router, {
   forwardAnim: 'fadeInRight',
   backAnim: 'fadeInRight',
   shadow: false,
 });
-const store = new VueX.Store({
-  state: {
-  },
-  mutations: {
-    setState(state, val) {
-      state[val.key] = val.value
-    }
-  }
-});
+
 Vue.config.productionTip = false;
 
 new Vue({
