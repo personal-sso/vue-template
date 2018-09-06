@@ -10,6 +10,7 @@ Vue.use(Router);
 const home = r => require.ensure([], () => r(require('@/page/home/home.vue')), 'home');
 const list = r => require.ensure([], () => r(require('@/page/list/list.vue')), 'list');
 const good = r => require.ensure([], () => r(require('@/page/good/good.vue')), 'good');
+const login = r => require.ensure([], () => r(require('@/page/login/login.vue')), 'login');
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/good',
     component: good
+  },
+  {
+    path: '/login',
+    component: login
   }
 ];
 

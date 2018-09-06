@@ -18,6 +18,7 @@
     </ul>
     <div>
       <a @click="$router.push('list')">默认转场效果</a>
+      <a @click="$router.push('login')">login</a>
     </div>
   </div>
 </template>
